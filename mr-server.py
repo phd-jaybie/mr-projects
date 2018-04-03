@@ -38,7 +38,7 @@ from PIL import Image
 
 
 # This is needed to add the tf-object detecton api modules
-sys.path.append("/Users/deg032/models/research")
+sys.path.append("/home/ec2-user/models/research")
 from object_detection.utils import ops as utils_ops
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
@@ -73,7 +73,7 @@ rKP, rDES = detector.detectAndCompute(ref_img, None)
 # What model to use.
 MODEL_NAME = 'ssd_mobilenet_v1_coco_2017_11_17'
 #MODEL_FILE = MODEL_NAME + '.tar.gz'
-OBJ_API_BASE = '/Users/deg032/models/research/object_detection/'
+OBJ_API_BASE = '/home/ec2-user/models/research/object_detection/'
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
